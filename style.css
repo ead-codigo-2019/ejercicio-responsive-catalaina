@@ -1,17 +1,64 @@
+body{
+  font-family: Roboto;
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+}
 .site-header {
   background: rgba( 255, 0, 0, 0.15 );
+  grid-column: 1/4;
+  Padding: 10px;
+  margin-bottom: 1;
+}
+ul{
+display: flex;
+margin: 0;
+padding: 0;
+}
+li{
+border: 1px dashed rgb(138, 134, 134);
+display: inline-flex;
+padding: 10px;
+flex-grow: 1;
+}
+.medio1{
+  background: #ffc;
+  grid-column: 1/2; 
+  grid-row: 3/4;
+
+}
+.medio2{
+  background: #ffc;
+  grid-column: 3/4; 
+  grid-row: 3/4;
 }
 .site-nav{
   background: rgba( 0, 255, 0, 0.15 );
+  grid-column: 1/4;
 }
+
 .site-main {
   background: #ffc;
+  grid-column: 2/3; 
+  grid-row: 3/4;
 }
+.cuadro1 {
+  flex: auto;
+  display: flex;
+
+}
+.cuadro2 {
+  flex: auto;
+  display: flex;
+  
+}
+
 .hentry {
   border: 2px dashed black;
-  margin: 1rem;
+  margin: 0rem;
   padding: 1rem;
+  grid-column: 2/3;
 }
 footer {
  background: rgba( 0, 0, 255, 0.15 ); 
+ grid-column: 1/4;
 }
